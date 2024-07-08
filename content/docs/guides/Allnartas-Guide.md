@@ -1,10 +1,12 @@
 ---
-title: "Allnarta's Guide"
-description: ""
-summary: ""
+title: "Refitting for Robert S guide"
+description: "Refitting for Robert S guide"
+summary: "Refitting for Robert S guide"
 draft: false
 weight: 40
 toc: true
+aliases:
+  - /docs/guides/allnartas-guide/
 ---
 
 > **DISCLAIMER:** This guide suggests you already know your way around Blender and have basic knowledge about modding BGS games. 
@@ -24,8 +26,9 @@ This guide was written with Robert S patching in mind, but it covers a lot of nu
 
 > Open Blender Console Window and type this:
 > 
-> import pip
-> pip.main(['install', 'scipy', '--user']) 
+> `import pip`
+>
+> `pip.main(['install', 'scipy', '--user'])`
 
 It will give a warning, but module will install.
 
@@ -39,25 +42,25 @@ It will give a warning, but module will install.
 
 - Open `File -> Import -> Starfield NIF File`
 
-![Picture2](/allnarta/picture2.PNG)
+![Picture2](/allnarta/picture2.png)
 
 - You can select few nif files at a time and it will import all of them, every one into it's own collection.
 
-![Picture3](/allnarta/picture3.PNG)
+![Picture3](/allnarta/picture3.png)
 
 - ALWAYS tick "Load Havok Skeleton". If mesh you importing contains cloth physics, it will export HAVOK skeleton that is essential for succesful mesh export!
 
-![Picture4](/allnarta/picture4.PNG)
+![Picture4](/allnarta/picture4.png)
 
 - SBG import supports [regular expressions](https://en.wikipedia.org/wiki/Regular_expression). This means you can filter files of a whole meshes folder to find nifs with exact trait you want, and *exclude ones you don't want*. For example, you can filter overall outfits folder by `_m` suffix and find *all* male outfit meses there. Then you can exclude `_go`, `_hat`, `_1st` suffix etc. and filter out only 3rd person body armor outfits parts. This allows you to very quickly find desired nifs, and combined with batch import it becomes unprecedently powerful tool for working with many armor pieces at once.
 
-![Picture4addon](/allnarta/picture4addon.PNG)
+![Picture4addon](/allnarta/picture4addon.png)
 
 - After import, mesh - or meshes - will appear in your .blend file.
 - If you imported few meshes in one operation - attach Armature modifier to all the meshes that don't have it (first one in selection row will always have it).
 
-![Picture5](/allnarta/picture5.PNG)
-![Picture6](/allnarta/picture6.PNG)
+![Picture5](/allnarta/picture5.png)
+![Picture6](/allnarta/picture6.png)
 
 ## Editing mesh and adding morphs
 
@@ -68,19 +71,19 @@ It will give a warning, but module will install.
 
 **Add basis shapekey to every outfit part:**
 
-![Picture7](/allnarta/picture7.PNG)
+![Picture7](/allnarta/picture7.png)
 
 - Select any shapekey EXCEPT Basis one on Reference mesh:
 
-![Picture8](/allnarta/picture8.PNG)
+![Picture8](/allnarta/picture8.png)
 
 - Select all your outfit parts. then select Reference mesh. Reference mesh has to be ACTIVE in your selection:
 
-![Picture9](/allnarta/picture9.PNG)
+![Picture9](/allnarta/picture9.png)
 
 - Click "Transfer shape-keys" button.
 
-![Picture10](/allnarta/picture10.PNG)
+![Picture10](/allnarta/picture10.png)
 
 - In most of cases you can leave default options.
 
@@ -100,11 +103,11 @@ All your outfit parts will have all Robert S Morphs as ShapeKeys now. Check how 
 
 - SGB supports *batch export* for your nif files. To export few meshes at once, select *Root nodes "Export Scene"* of all objects you want to export. Your .nif files will be called by collection names they belong to. When you use batch export, erase name of output file in export window completely, so SGB can name every file respectively.
 
-![Picture11](/allnarta/picture11.PNG)
+![Picture11](/allnarta/picture11.png)
 
 - Go to `File -> Export -> Starfield .Nif File`
 
-![Picture12](/allnarta/picture12.PNG)
+![Picture12](/allnarta/picture12.png)
 
 - At this step you have to decide if you want to have your .nif's as default external geometry, i.e. empty nif+.mesh file geometry, or you want to use *internal geometry* nif. Internal geo nif's aren't used by most of Starfield meshes, but as it turned out, it supports them perfectly fine, and saves lifetime of struggling.
 
@@ -121,23 +124,23 @@ All your outfit parts will have all Robert S Morphs as ShapeKeys now. Check how 
 
 - Untick "Internal geometry" in export options tab.
 
-![Picture13](/allnarta/picture13.PNG)
+![Picture13](/allnarta/picture13.png)
 
 - Export mesh.
 - Open folder with your .nif file.
 - You will see "geometries" folder created by exporter:
 
-![Picture14](/allnarta/picture14.PNG)
+![Picture14](/allnarta/picture14.png)
 
 - Put this folder to your mod "geometries" folder. You can rename mesh file filder and name to something readable.
 
-![Picture15](/allnarta/picture15.PNG)
+![Picture15](/allnarta/picture15.png)
 
 - Open your .nif file.
 - Find `BSGeometry -> Meshes -> Mesh 0`
 - Change Mesh path to the one you set for your .mesh file:
 
-![Picture16](/allnarta/picture16.PNG)
+![Picture16](/allnarta/picture16.png)
 
 - Save your .nif.
 
@@ -154,11 +157,11 @@ All your outfit parts will have all Robert S Morphs as ShapeKeys now. Check how 
 - If material path is too long, SGB tentds to cut it off, causing mesh to have incorrect material path and, as result, not show up in game.
 - To fix it, go to BSGeometry -> BSLightingShaderProperty and check it's name:
 
-![Picture17](/allnarta/picture17.PNG)
+![Picture17](/allnarta/picture17.png)
 
 - If it is incorrect, uncomplete, or wrong, just change it to correct .mat path for your mesh (by either copypasting from original mesh or in any other way), by richt clicking on it and selecting "Edit String Index".
 
-![Picture18](/allnarta/picture18.PNG)
+![Picture18](/allnarta/picture18.png)
 
 
 ### NiClothExtraData
@@ -172,15 +175,15 @@ All your outfit parts will have all Robert S Morphs as ShapeKeys now. Check how 
 - Select outfit part you want to export .dat file for (it should have all the shape keys already as we transferred them from reference mesh before).
 - Click "Advanced Morph Edit":
 
-![Picture19](/allnarta/picture19.PNG)
+![Picture19](/allnarta/picture19.png)
 
 - Select Root node of objects generated from your mesh:
 
-![Picture20](/allnarta/picture20.PNG)
+![Picture20](/allnarta/picture20.png)
 
 - Go to File -> Export -> Starfield .dat file:
 
-![Picture21](/allnarta/picture21.PNG)
+![Picture21](/allnarta/picture21.png)
 
 - Repeat process for all parts of your outfit.
 - Morph files are stored in meshes/morphs/your-outfit-dat-file-folder. You set-up morph record for armor in *either CK or xEdit* - MOPRH (Morphable Object) now is part of Armor Addon record, and MOPRH record is a new record type now, it's not found automatically. You set *folder path* in MORPH, and your morph file *always* has to be named "morph.dat*.
@@ -216,15 +219,6 @@ All your outfit parts will have all Robert S Morphs as ShapeKeys now. Check how 
 	- Outfit part that has cloth physics data *must use it's own Havok skeleton that is imported alongside Load Havok Skeleton*.
 	- Robert S skin parts should use *Extended skeleton, which is either provided in reference .blend file, or you can choose it when you import .nif*:
 
-	- ![Picture24](/allnarta/picture24.PNG)
+	- ![Picture24](/allnarta/picture24.png)
 
 - If you make cloth physics *from scratch*, I advice just to use Extended skeleton as a base for Havok skeleton and add cloth bones to it.
-
-
-
-
-
-
-
-
-
