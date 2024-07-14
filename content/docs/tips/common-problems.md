@@ -14,6 +14,7 @@ It being invisible in-game might mean:
 - If you don't use internal geometry, then it might be incorrectly exported `.mesh`: geometries folder should be at the root of the folder next to the meshes, etc.
 - If your model is Armor Addon, then it might be slots conflict (slot that the armor part occupies is already occupied by other currently equipped clothing item)
 - Too high/low, and it's actually too above/below of the point it should be located at. Sometimes because of it being too high/low it's invisible entirely in-game because it exceeds object bounds. Check if it's located at correct location in the NifSkope 3D scene.
+- If your model uses physics bones, the nif must contain physics data block.
 
 ## Invisible in NifSkope
 > At first, make sure you have the correct [NifSkope, by fo76utils](https://github.com/fo76utils/nifskope/releases/latest).
