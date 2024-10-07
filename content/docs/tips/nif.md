@@ -27,6 +27,8 @@ Yes, currently it is possible to create a custom nif file, along with the custom
 ### What is internal geometry?
 Internal geometry is a mesh but inside the nif file itself. Most of the vanilla nif files are the opposite: they link to the mesh by specific path, having the mesh stored externally.
 
+Internal geometry is known to cause isses with headparts.
+
 ### Where are nif files?
 Vanilla nif files are located in [.ba2 archives](/docs/tips/archives/) that have `Meshes` in the archive name. Nif files are located specifically inside the `meshes` folder.
 

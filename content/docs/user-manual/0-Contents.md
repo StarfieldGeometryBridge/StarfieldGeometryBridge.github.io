@@ -1,53 +1,21 @@
 ---
 title: "Contents"
-description: ""
-summary: ""
+description: "Contents of the user manual"
+summary: "Contents of the user manual"
 draft: false
-weight: 0
+weight: 10
 toc: true
-seo:
-  title: "" # custom title (optional)
-  description: "" # custom description (recommended)
-  canonical: "" # custom canonical URL (optional)
-  noindex: false # false (default) or true
 aliases:
   - /docs/guides/contents/
 ---
 
-## Catalogue and References:
+{{< link-card title="Chapter 1: Setting-up addon" description="Setting up the plugin, Setting up the paths, First Export" href="/docs/user-manual/setting-up-addon/" >}}
 
-### Chapter 0: [Setting Up Your Plugin](/docs/user-manual/hello-world/#setting-up-your-plugin)
+{{< link-card title="Chapter 1.1: Exporting model or morph" description="" href="/docs/user-manual/exporting-data/" >}}
 
-- [Installation](/docs/user-manual/hello-world/#installation)
-- [Set Up Paths](/docs/user-manual/hello-world/#set-up-paths)
-
-### Chapter 1: [Hello World!](/docs/user-manual/hello-world/#hello-world)
-
-- [Your First Mesh Export](/docs/user-manual/hello-world/#your-first-mesh-export)
-
-### Chapter 2: Model Creation
-
+Chapter 3: Morph Editing
 - Under Construction...
 
-### Chapter 3: Morph Editing
+{{< link-card title="Chapter 4: Cloth Physics Nodes" description="All about Physics Graph nodes for creating custom cloth physics" href="/docs/user-manual/cloth-physics-nodes/" >}}
 
-- Under Construction...
- 
-### Chapter 4: [Cloth Physics](/docs/user-manual/cloth-physics/#cloth-physics)
-
-
-- [Preparation](/docs/user-manual/cloth-physics/#preparations) 
-- [Pre-requisite Knowledge](/docs/user-manual/cloth-physics/#prerequisite-knowledge) 
-- [Edit Physics in Node Editor](/docs/user-manual/cloth-physics/#edit-physics-in-node-editor) 
-    -  [Important Notes](/docs/user-manual/cloth-physics/#important-notes)  
-	- [Graph and nodes](/docs/user-manual/cloth-physics#graph-and-nodes)
-		- [Graph for Cloth Physics](/docs/user-manual/cloth-physics/#graph-for-cloth-physics)
-        - [nodes for Cloth Physics](/docs/user-manual/cloth-physics/#nodes-for-cloth-physics)
-	        - [Category: Input](/docs/user-manual/cloth-physics/#nodes-for-cloth-physics-input)
-            - [Category: Output](/docs/user-manual/cloth-physics/#nodes-for-cloth-physics-output)
-            - [Category: Select](/docs/user-manual/cloth-physics/#nodes-for-cloth-physics-select)
-            - [Category: Simulation](/docs/user-manual/cloth-physics/#nodes-for-cloth-physics-simulation)
-            - [Category: Constraints](/docs/user-manual/cloth-physics/#nodes-for-cloth-physics-constraints)
-            - [Category: Colliders](/docs/user-manual/cloth-physics/#nodes-for-cloth-physics-colliders)
-            - [Category: Physics Data](/docs/user-manual/cloth-physics/#nodes-for-cloth-physics-physics-data)
-            - [Category: Physics Bones](/docs/user-manual/cloth-physics/#nodes-for-cloth-physics-physics-bones)
+{{< link-card title="Chapter 4.1: Cloth Physics Guide" description="Guide for creating custom cloth physics" href="/docs/user-manual/cloth-physics-guide/" >}}
