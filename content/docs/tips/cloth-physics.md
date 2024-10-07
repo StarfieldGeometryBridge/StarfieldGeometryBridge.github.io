@@ -14,7 +14,7 @@ Cloth physics `.bin` file contains binary cloth physics data.
 ## FAQ
 
 ### Is it possible to create a custom cloth physics .bin file?
-Yes, it is currently possible to create a custom cloth physics .bin file. You can refer to [Cloth Physics Guide](/user-manual/cloth-physics-guide/).
+Yes, it is currently possible to create a custom cloth physics .bin file. You can refer to [Cloth Physics Guide](/docs/user-manual/cloth-physics-guide/).
 
 ### Where are cloth physics .bin files?
 In nifs containing physics data, cloth physics bin files are located next to the BSGeometry, in the BSClothExtraData.
