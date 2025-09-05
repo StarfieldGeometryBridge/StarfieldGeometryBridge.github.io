@@ -12,6 +12,7 @@ seo:
   noindex: false # false (default) or true
 aliases:
   - /docs/guides/hello-world/
+  - /docs/user-manual/setting-up-addon/
 ---
 
 # Setting Up Your Plugin
@@ -49,14 +50,25 @@ ___
 ### What's next?
 **Depending on what you plan to do next, here is some knowledge you might find useful:**
 
-{{< card-grid >}}
-{{< link-card title="Mesh" href="/docs/tips/mesh" >}}
-{{< link-card title="Nif" href="/docs/tips/nif" >}}
-{{< link-card title="Morph" href="/docs/tips/morph" >}}
-{{< /card-grid >}}
+{{< cards >}}
+  {{< card
+      link="/docs/tips/mesh"
+      title="Mesh" >}}
+  {{< card
+      link="/docs/tips/nif"
+      title="Nif" >}}
+  {{< card
+      link="/docs/tips/morph"
+      title="Morph" >}}
+{{< /cards >}}
 
-{{< card-grid >}}
-{{< link-card title="Exporting model" href="/docs/user-manual/exporting-data" >}}
-{{< /card-grid >}}
+{{< cards >}}
+  {{< card
+      link="/docs/user-manual/exporting-data"
+      title="Exporting model" >}}
+  {{< card
+      link="/docs/tips/nif"
+      title="Nif" >}}
+{{< /cards >}}
 
 ___

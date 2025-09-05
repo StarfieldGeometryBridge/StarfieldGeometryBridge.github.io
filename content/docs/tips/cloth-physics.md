@@ -31,4 +31,4 @@ flowchart LR
 ```
 
 ### How to open cloth physics .bin file?
-Currently, it is impossible to import the data from the physics .bin file to the editable physics graph. However, it is possible to visualize some of the data it contains (see [Cloth Physics Guide](/docs/user-manual/cloth-physics-guide/#inspecting-how-vanilla-does-it))
+Currently, it is impossible to import the data from the physics .bin file to an physics graph editable by Starfield Geometry Bridge. However, it is possible to visualize some of the data it contains (see [Cloth Physics Guide](/docs/user-manual/cloth-physics-guide/#inspecting-how-vanilla-does-it))

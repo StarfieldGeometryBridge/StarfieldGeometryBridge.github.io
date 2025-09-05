@@ -1,8 +1,0 @@
-[en]
-  languageName = "English"
-  contentDir = "content/en"
-  weight = 10
-  [en.params]
-    languageISO = "EN"
-    languageTag = "en-US"
-    footer = 'A website for the fan-made tool Starfield Geometry Bridge. Theme by <a class="text-muted" href="https://gethyas.com/">Hyas</a>'

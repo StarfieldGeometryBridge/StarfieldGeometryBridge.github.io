@@ -13,6 +13,7 @@ seo:
 aliases:
   - /docs/guides/cloth-physics/
   - /docs/user-manual/cloth-physics/
+  - /docs/user-manual/cloth-physics-nodes/
 ---
 
 

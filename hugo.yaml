@@ -1,0 +1,54 @@
+# Hugo configuration file
+title: Starfield Geometry Bridge
+baseurl: https://StarfieldGeometryBridge.github.io/
+
+# import hextra as module
+module:
+  imports:
+    - path: github.com/imfing/hextra
+
+markup:
+  # allow raw html
+  goldmark:
+    renderer:
+      unsafe: true
+
+  # enable hextra syntax highlight
+  highlight:
+    noClasses: false
+
+menu:
+  main:
+    - name: Docs
+      pageRef: /docs
+      weight: 1
+    - name: Search
+      weight: 4
+      params:
+        type: search
+    - name: GitHub
+      weight: 5
+      url: "https://github.com/SesamePaste233/StarfieldMeshConverter"
+      params:
+        icon: github
+
+params:
+  navbar:
+    displayTitle: true
+    displayLogo: true
+    logo:
+      path: favicon.png
+      dark: favicon.png
+      link: /
+
+  footer:
+    displayCopyright: true
+    displayPoweredBy: true
+
+  editURL:
+    enable: true
+    base: "https://github.com/StarfieldGeometryBridge/StarfieldGeometryBridge.github.io/edit/main/content"
+  
+  theme:
+    default: dark
+    displayToggle: true
